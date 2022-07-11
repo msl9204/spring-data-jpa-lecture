@@ -13,8 +13,8 @@ import java.time.LocalDateTime;
 public class JpaBaseEntity {
 
     @Column(updatable = false)
-    private LocalDateTime createdDate;
-    private LocalDateTime updatedDate;
+    protected LocalDateTime createdDate;
+    protected LocalDateTime updatedDate;
 
     @PrePersist
     public void prePersist() {
